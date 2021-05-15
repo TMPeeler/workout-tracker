@@ -1,4 +1,4 @@
-const router = require('express').router();
+const router = require('express').Router();
 const path = require('path');
 
   router.get('/exercise', (req, res) => {
@@ -13,4 +13,4 @@ const path = require('path');
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
 
-  module.export = router;
+  module.exports = router;
